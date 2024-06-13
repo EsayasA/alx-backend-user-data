@@ -10,15 +10,16 @@ Base = declarative_base()
 
 
 class User(Base):
-    """A class user
+    """A class representing a user in the system.
 
     Attributes:
-        __tablename__ (str): table name.
-        id (int): id
-        email (str): email .
-        hashed_password (str): hashed password
-        session_id (str): session id
-        reset_token (str): reset token for 
+        __tablename__ (str): The name of the table in the database 
+        id (int):  unique identifier.
+        email (str): email.
+        hashed_password (str):hashed password.
+        session_id (str):  ID of the user, 
+        user sessions.
+        reset_token (str): The reset token of the user,
         resets.
     """
     __tablename__ = 'users'
